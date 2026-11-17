@@ -1,0 +1,2 @@
+#selected-product-badge{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;align-self:center;padding:6px 10px;margin-right:5px;border:1px solid #c6d9ee;border-radius:7px;background:#edf4fc;color:#235fa5;font:600 13px/1.3 "Segoe UI",sans-serif;letter-spacing:.3px;white-space:nowrap}
+#selected-product-badge{cursor:pointer;padding:6px 9px;max-width:110px;min-height:32px}#selected-product-badge:hover{border-color:#235fa5;background:#e3eefb}#selected-product-badge:focus-visible{outline:2px solid #235fa5;outline-offset:2px}

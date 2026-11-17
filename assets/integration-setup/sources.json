@@ -1,0 +1,66 @@
+{
+  "mqtt-2.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73018582774/original/pE_-w4bk4E55FxQqpftxWdZKyM-Q9AKaAA.png?1659341106",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000514114"
+  },
+  "bacnet-4.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73148050541/original/cR9S-khnk29a9cohRwuzt3-2Cn2slEu3Iw.png?1737690155",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000647207"
+  },
+  "bacnet-5.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73148050571/original/F3nIMkowbwUvhqzZTKj4ZJHqgJI8eXHiAA.png?1737690216",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000647207"
+  },
+  "bacnet-11.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73148050695/original/g_q2B0ecHLHlXvE_nRBdLU64vFdlX-3qDQ.png?1737690359",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000647207"
+  },
+  "mdp-gateway-2.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73133479111/original/6T0uCC6HC1yaxaiHtC4xULk1d912hp-Aew.png?1730356988",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000643575"
+  },
+  "mdp-gateway-7.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73133478995/original/8c3hAiYfLjXGPOy3QgrU3zTOxkY_EvZznQ.png?1730356862",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000643575"
+  },
+  "mdp-gateway-9.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73133479007/original/reyykQ-QZ0STVkpsUTo6jmvwdM0gap5KLQ.png?1730356886",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000643575"
+  },
+  "mdp-auth.png": {
+    "imageSource": "https://www.milesight.com/development-platform/docs/en/images/screenshot/user-guide/authentication-information.png",
+    "sourcePage": "https://www.milesight.com/development-platform/docs/en/user-guide/application-authentication.html"
+  },
+  "mdp-application.png": {
+    "imageSource": "https://www.milesight.com/development-platform/docs/en/images/screenshot/user-guide/select-application-1.png",
+    "sourcePage": "https://www.milesight.com/development-platform/docs/en/user-guide/application-authentication.html"
+  },
+  "mdp-webhook.png": {
+    "imageSource": "https://www.milesight.com/development-platform/docs/en/images/screenshot/user-guide/set-up-webhook.png",
+    "sourcePage": "https://www.milesight.com/development-platform/docs/en/api-reference/set-up-webhook-event-notification.html"
+  },
+  "mdp-lns.png": {
+    "imageSource": "https://www.milesight.com/development-platform/docs/en/images/screenshot/user-guide/milesight-development-platform-lns.png",
+    "sourcePage": "https://www.milesight.com/development-platform/docs/en/introduction/connect-a-device.html"
+  },
+  "mqtt-connection.png": {
+    "sourcePage": "https://resource.milesight.com/milesight/iot/document/ug65-user-guide-en.pdf#page=33"
+  },
+  "mqtt-topics.png": {
+    "sourcePage": "https://resource.milesight.com/milesight/iot/document/ug65-user-guide-en.pdf#page=33"
+  },
+  "http-integration.png": {
+    "sourcePage": "https://resource.milesight.com/milesight/iot/document/ug65-user-guide-en.pdf#page=35"
+  },
+  "codec-library.png": {
+    "sourcePage": "https://resource.milesight.com/milesight/iot/document/ug65-user-guide-en.pdf#page=36"
+  },
+  "http-api-4.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73117041407/original/FujemiO-INWVRoj_4o7e_jm4AjkRBgv50A.png?1721956923",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000514150"
+  },
+  "http-api-14.png": {
+    "imageSource": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/73117042250/original/oKoP04VoDAWexBsVmSPKS4imkU2_PG4otQ.png?1721957685",
+    "sourcePage": "https://support.milesight-iot.com/support/solutions/articles/73000514150"
+  }
+}

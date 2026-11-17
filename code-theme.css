@@ -1,0 +1,14 @@
+/* Shared code surface: applies to both product journeys and configuration dialogs. */
+:root{--code-bg:#151d2c;--code-fg:#e6edf7;--code-border:#29364b;--code-accent:#55c6f2}
+html body pre,
+html body textarea:is(#mqtt-json-editor,#mqtt-uplink-input,#pl-json-draft,#pl-report-json,#uc-command-editor,#uc-report-input,#uc-config-mdpBody,#umr-json-editor,#umr-uplink-input),
+html body .pl-connection textarea{
+ background:var(--code-bg)!important;color:var(--code-fg)!important;border-color:var(--code-border)!important;
+ font-family:Consolas,"SFMono-Regular",Menlo,monospace;line-height:1.65;tab-size:2;color-scheme:dark;
+}
+html body pre code{background:transparent!important;color:inherit!important;border:0;box-shadow:none}
+html body pre::selection,html body pre *::selection,html body textarea::selection{background:#315c87;color:#fff}
+html body textarea:is(#mqtt-json-editor,#mqtt-uplink-input,#pl-json-draft,#pl-report-json,#uc-command-editor,#uc-report-input,#uc-config-mdpBody,#umr-json-editor,#umr-uplink-input)::placeholder{color:#9aaac0;opacity:1}
+html body pre:focus-visible{outline:2px solid var(--code-accent);outline-offset:2px}
+@media print{html body pre{background:#f2f4f7!important;color:#172235!important;white-space:pre-wrap}}html body pre *{color:inherit!important}
+:root body:not(#code-theme-a):not(#code-theme-b):not(#code-theme-c) pre{background:var(--code-bg)!important;color:var(--code-fg)!important;border-color:var(--code-border)!important}

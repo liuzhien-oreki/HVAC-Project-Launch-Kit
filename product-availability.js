@@ -1,0 +1,3 @@
+const portfolioBeforeAvailability=portfolio;
+portfolio=function(){return portfolioBeforeAvailability().replace(/<article class="card product explore-product" data-product="([^"]+)">[\s\S]*?<\/article>/g,(card,name)=>{if(['WT201','UC701'].includes(name))return card;return card.replace('card product explore-product','card product explore-product product-pending').replace(/<button class="product-explore"[\s\S]*?<\/button>/,'<span class="product-pending-label">'+(language==='en'?'Coming soon':'即将上线')+'</span>').replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/g,'<span class="product-link product-link-unavailable">$2</span>')})};
+chooseProduct=function(name){if(name!=='WT201')return;localStorage.setItem('kit-product','WT201');go(6)};

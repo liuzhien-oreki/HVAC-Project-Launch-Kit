@@ -1,0 +1,8 @@
+/* Keep every modal's close control in its own pinned top-right toolbar. */
+.ns-guides-dialog>header,.gateway-setup-dialog>.gateway-dialog-heading,.pek-dialog>header,.install-zoom>form,.gateway-image-dialog>form{position:sticky!important;top:0!important;z-index:30!important;background:#fff!important;isolation:isolate;box-shadow:0 5px 12px #173b4c0a;flex-shrink:0}
+.ns-guides-dialog>header,.gateway-setup-dialog>.gateway-dialog-heading{background:#f3f7fc!important}
+.pek-dialog>header{padding:12px 0!important;margin-top:-12px;align-items:flex-start}
+.install-zoom>form,.gateway-image-dialog>form{display:flex;justify-content:flex-end;align-items:flex-start;margin:0 0 14px;padding:8px 0;min-height:40px}
+.ns-guides-dialog>header>.ns-close,.gateway-close,.pek-dialog>header>button,.install-zoom>form>button,.gateway-image-dialog>form>button{flex-shrink:0;align-self:flex-start;min-width:38px;min-height:38px;cursor:pointer}
+.ns-close,.gateway-close,.pek-dialog>header>button{display:grid;place-items:center;padding:0!important;line-height:1!important}
+.ns-guides-dialog,.gateway-setup-dialog,.pek-dialog,.install-zoom,.gateway-image-dialog{overscroll-behavior:contain}

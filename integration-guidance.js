@@ -1,0 +1,13 @@
+// Remember explored entry points on this browser, including across page renders.
+const integrationHintStorage='hvac-integration-explored-v1';
+let integrationExplored=[];
+try{const saved=JSON.parse(localStorage.getItem(integrationHintStorage)||'[]');if(Array.isArray(saved))integrationExplored=saved.filter(v=>typeof v==='string')}catch(e){}
+function markIntegrationExplored(key){if(!integrationExplored.includes(key)){integrationExplored.push(key);try{localStorage.setItem(integrationHintStorage,JSON.stringify(integrationExplored))}catch(e){}}document.querySelectorAll('[data-integration-hint]').forEach(el=>{if(el.dataset.integrationHint===key)el.classList.remove('integration-discover')})}
+const integrationChooseBeforeGuide=chooseIntegrationRoute;
+chooseIntegrationRoute=function(route){if(!integrationRoutes.some(r=>r[0]===route))return;markIntegrationExplored('route:'+route);integrationChooseBeforeGuide(route);requestAnimationFrame(()=>requestAnimationFrame(()=>{if(page!==3||integrationChoice!==route)return;const target=document.querySelector('.integration-details > .integration-setup-entry')||document.querySelector('.integration-details .integration-demo-title');if(target)target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'})}))};
+const gatewayOpenBeforeGuide=openGatewaySetup;
+openGatewaySetup=function(){markIntegrationExplored('gateway');gatewayOpenBeforeGuide()};
+const nsOpenBeforeGuide=openNsGuides;
+openNsGuides=function(){markIntegrationExplored('ns');nsOpenBeforeGuide()};
+const integrationViewBeforeGuide=views[3];
+views[3]=function(){const template=document.createElement('template');template.innerHTML=integrationViewBeforeGuide();const root=template.content;const gateway=root.querySelector('.gateway-product-photo img');if(gateway)gateway.src='assets/gateway/ug65-topology.png';const platform=root.querySelector('.topology-application>span');if(platform){const img=document.createElement('img');img.src='assets/gateway/platform-topology.png';img.alt=installCopy('Application platform','应用平台');img.className='topology-platform-picture';platform.replaceWith(img)}const hint=(el,key)=>{if(!el)return;el.dataset.integrationHint=key;if(!integrationExplored.includes(key))el.classList.add('integration-discover')};hint(root.querySelector('.gateway-setup-entry'),'gateway');hint(root.querySelector('.ns-entry'),'ns');root.querySelectorAll('.protocol-choice').forEach(el=>{const match=(el.getAttribute('onclick')||'').match(/chooseIntegrationRoute\('([^']+)'\)/);if(match)hint(el,'route:'+match[1])});return template.innerHTML};

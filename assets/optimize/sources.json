@@ -1,0 +1,13 @@
+{
+  "ws202": "https://www.milesight.com/static/pc/en/product/product/lorawan-sensor/ws202/ws202-pir-light-sensor-1.png?t=1793952422323",
+  "ws301": "https://www.milesight.com/static/pc/en/product/product/lorawan-sensor/ws301/ws301-magnetic-contact-switch-1.png?t=1793952422554",
+  "em300-th": "https://www.milesight.com/static/pc/en/product/product/lorawan-sensor/em300-th/temperature-humidity-sensor-em300-front.png?t=1793952411547",
+  "em320-th": "https://www.milesight.com/static/pc/en/product/product/lorawan-sensor/em320-th/new/product-3.png?t=1793952412061",
+  "wt201-radio.png": "https://resource.milesight.com/milesight/iot/document/wt201-user-guide-en.pdf#page=35",
+  "wt201-pairing.png": "https://resource.milesight.com/milesight/iot/document/wt201-user-guide-en.pdf#page=36",
+  "wt201-agent.png": "https://resource.milesight.com/milesight/iot/document/wt201-user-guide-en.pdf#page=41",
+  "ws202-controller.png": "https://resource.milesight.com/milesight/iot/document/ws202-user-guide-en.pdf#page=18",
+  "ws202-triggers.png": "https://resource.milesight.com/milesight/iot/document/ws202-user-guide-en.pdf#page=18",
+  "ws301-controller.png": "https://resource.milesight.com/milesight/iot/document/ws301-user-guide-en.pdf#page=19",
+  "ws301-triggers.png": "https://resource.milesight.com/milesight/iot/document/ws301-user-guide-en.pdf#page=19"
+}
