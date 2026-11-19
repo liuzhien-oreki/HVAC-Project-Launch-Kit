@@ -1,0 +1,9 @@
+/* First-visit product selection guide, shared by both product journeys. */
+(function(){
+ const key='hvac-select-guide-seen-v1';let tour=null,timer;
+ const text=(en,zh)=>language==='zh'?zh:en;
+ function stop(){clearTimeout(timer);if(tour){tour.destroy();tour=null}}
+ function launch(){stop();if(page!==0||!window.driver?.js?.driver)return;const cards=document.querySelector('.products')||document.querySelector('[data-product="WT201"]');if(!cards)return;try{localStorage.setItem(key,'1')}catch(e){}tour=window.driver.js.driver({showProgress:false,allowClose:true,overlayOpacity:.4,stagePadding:8,stageRadius:12,popoverClass:'hvac-guide-popover',doneBtnText:text('Choose a device','选择设备'),steps:[{element:cards,popover:{title:text('Choose your device first','请先选择设备'),description:text('Select WT201 or UC701 and click Start exploring. The following Introduce, Install and Integrate pages will follow that model. Greyed-out products are coming soon.','选择 WT201 或 UC701，点击“开始探索”。后续产品介绍、安装和集成页面会切换为所选型号。灰色产品暂未开放。'),side:'top',align:'center'}}],onDestroyed(){tour=null}});tour.drive()}
+ function mount(){if(page!==0)return;const heading=document.querySelector('#matrix')||document.querySelector('.sectionhead');if(heading&&!document.getElementById('selection-guide-launcher')){const button=document.createElement('button');button.id='selection-guide-launcher';button.className='outline';button.textContent=text('? Selection guide','? 选型引导');button.onclick=launch;heading.append(button)}let seen=false;try{seen=localStorage.getItem(key)==='1'}catch(e){}if(!seen)timer=setTimeout(launch,450)}
+ const previous=go;go=function(n){stop();previous(n);mount()};mount();
+})();
